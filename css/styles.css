@@ -101,16 +101,13 @@ h3{
     color: #D92B04;
    }
 
-.exhibits a{
-    text-decoration: none;
-}
-
-.exhibits a:hover{
+.exhibits a
+{
     text-decoration: underline;
 	text-decoration-color: #D92B04;
 	-webkit-text-decoration-color: #D92B04;
-
 }
+
 
 .top-logo{
     content:url("/pictures/logo/small\ color\ logo\ -\ no\ background.png")
@@ -151,7 +148,7 @@ nav ul {
 
 
 
-.news img{
+img{
     width: 100%;
 }
 
