@@ -1,5 +1,6 @@
 body{
     background-color: #FEFAEE;
+
 }
 
 .orange{
@@ -30,10 +31,12 @@ h4,
 nav a{
     color: #000;
     text-decoration: none;
+    margin: 2rem;
 }
 
 h3{
-    color: #496880
+    color: #496880;
+    margin: 1rem;
 }
 
 footer{
@@ -110,8 +113,10 @@ h3{
 
 
 .top-logo{
-    content:url("/pictures/logo/small\ color\ logo\ -\ no\ background.png")
+    content: url("/pictures/logo/small\ color\ logo\ -\ no\ background.png");
 }
+
+/*navigation*/
 
 nav a,
 .cta{
@@ -125,6 +130,33 @@ nav a,
 nav ul {
     padding: 0;
   }
+
+#navigation .highlight-nav{
+    color: #fff;
+}
+
+
+#hamburger-menu {
+    display:none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+
+}
+
+nav{
+    margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 45px;
+    background-color: #FEFAEE;
+    z-index: 1000;
+    right: 0px;
+}
+
+
+
 
 /*home page*/
 .welcome {
