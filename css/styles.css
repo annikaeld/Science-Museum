@@ -189,6 +189,7 @@ img{
     width: 100%;
 }
 
+
 @media (min-width: 600px){
     
 }
@@ -289,6 +290,30 @@ header{
         padding-left: 0px;
         }
 }
+.new{
+    display:grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: 50px auto;
+    grid-gap: 10px;
+  }
+
+.new{
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.new-news h2,
+.new-news h4,
+.new-news p{
+    grid-column: 1;
+    margin: 15px;
+}
+
+.new h2{
+    grid-column: -1/1;
+  }
+
 
 
 
