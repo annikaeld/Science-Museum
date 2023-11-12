@@ -76,8 +76,9 @@ nav a{
 
 h1,
 .cta,
-#navigation{
-    font-size: 2.8125rem;
+#navigation
+{
+    font-size: 1.9rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -92,8 +93,9 @@ h1,
 
 h2,
 .home h1,
-h3{
-    font-size: 1.875rem;
+h3
+{
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -122,13 +124,14 @@ nav a,
 .cta{
     display: block;
     padding: 1rem;
-    max-width: 24.125rem;
+    max-width: 24rem;
     margin-bottom: 1.69rem;
     text-align: center;
 }
 
 nav ul {
     padding: 0;
+    list-style: none;
   }
 
 #hamburger-menu {
@@ -141,10 +144,10 @@ nav ul {
 }
 
 nav{
-    margin-left: 25px;
+    margin-left: 0px;
     display: none;
-    position: fixed;
-    top: 45px;
+    position: absolute;
+    top: 60px;
     background-color: #FEFAEE;
     z-index: 1000;
     right: 0px;
@@ -173,13 +176,89 @@ nav{
     margin: auto;
 }
 
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
 
 
 img{
     width: 100%;
 }
 
-@media (min-width: 800px){
+@media (min-width: 600px){
+    
+}
+
+
+
+@media (min-width: 900px){
+h1,
+.cta{
+
+    font-size: 2.81rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+h2,
+.home h1,
+h3{
+
+    font-size: 1.87rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#navigation{
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #BAE1FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 15px;
+
+}
+
+.nav-bar{
+    background-color: #BAE1FF;
+}
+
+nav a{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display:block;
+    margin: 0;
+}
+
+.home{
+    height: 14.375rem;
+    width: 59.625rem;
+    margin: auto;
+    background: linear-gradient(180deg, #CDDDEA 0%, #65AEFC 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+
+
     .top-logo{
         content: url("/pictures/logo/long\ color\ logo\ -\ no\ background.png")
     }
@@ -188,7 +267,27 @@ img{
         display: none;
     
     }
-
+    
+    
+    nav {
+        display:block;
+        position: static;
+        top: 0px;
+    }
+    
+    nav li{
+        display: inline-block;
+        padding: 0px;
+        
+    }
+    
+    header label{
+        display: none;
+    }
+    
+    #navigation .highlight-nav{
+        padding-left: 0px;
+        }
 }
 
 
