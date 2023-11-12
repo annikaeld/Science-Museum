@@ -196,9 +196,27 @@ img {
     width: 100%;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+footer img {
+    max-width: 50%;
+    height: auto;
+
+}
+
 .footer-logo-slogan h3 {
     font-size: 1.6rem;
     text-align: center;
+}
+
+.footer-logo-slogan p {
+    text-align: center;
+
 }
 
 @media (min-width: 600px) {}
@@ -349,14 +367,14 @@ img {
         max-width: 90rem;
         margin: auto;
     }
-}
 
-.footer-logo-slogan h3 {
-    font-size: 3rem;
-}
 
-.footer-logo-slogan p {
-    margin: 5px;
-    margin-left: 19rem;
-}
+    .footer-logo-slogan h3 {
+        font-size: 3rem;
+    }
+
+    .footer-logo-slogan p {
+        margin: 5px;
+        margin-left: 19rem;
+    }
 }
