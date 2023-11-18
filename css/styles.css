@@ -1,6 +1,12 @@
 body {
     background-color: #FEFAEE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
+footer {
+    margin-top: auto;
 }
 
 .orange {
@@ -135,6 +141,16 @@ nav a,
     text-align: center;
 }
 
+.cta-small {
+    display: block;
+    max-width: 15rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    text-transform: none;
+}
+
 
 nav ul {
     padding: 0;
@@ -199,11 +215,13 @@ header {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 /*find us*/
 
-.find-us {
+.find-us,
+.about-start {
     max-width: 49rem;
     margin: auto;
 }
@@ -230,9 +248,51 @@ img {
     margin: 0;
 }
 
+/*join us*/
+
+.children,
+.teacher,
+.researcher {
+    padding: 1rem;
+}
+
+.teacher {
+    background-color: #BAE1FF;
+}
+
+.join-us img {
+    border-radius: 1rem;
+}
+
+/*donate*/
 
 
+input[type=number] {
+    background-color: white;
+    color: black;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: x-large;
+}
 
+input[type=number]:focus {
+    border: 3px solid #BAE1FF;
+}
+
+/*copied from w3schools.com how to hide arrows from number field*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
 /*footer*/
 
@@ -262,168 +322,252 @@ footer img {
 
 }
 
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
 
-
-
-@media (min-width: 900px) {
-    .cta {
-        font-size: 2.2rem;
-        padding: 1.2rem 6rem;
-    }
-
-    h1 {
-
-        font-size: 2.81rem;
-
-    }
-
-    h2,
-    .home h1,
-    h3 {
-
-        font-size: 1.87rem;
-
-    }
-
-    .home h1 {
-        padding: 3.5rem 5.9rem 3.5rem 9.5rem;
-    }
-
-    .home-cta {
-        position: absolute;
-        top: 34rem;
-        right: 2rem;
-    }
-
-    #navigation {
-        font-size: 1.2rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        background-color: #BAE1FF;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin: 0;
-        padding: 15px;
-
-    }
-
-    #navigation .highlight-nav {
-        background-color: #D92B04;
-        color: white;
-    }
-
-    .nav-bar {
-        background-color: #BAE1FF;
-    }
-
-    nav a {
-        padding: 0;
-        margin: 0;
-    }
-
-    header {
-        display: block;
-        margin: 0;
-    }
-
-    .home {
-        height: 14.375rem;
-        width: 59.625rem;
-        margin: auto;
-        background: linear-gradient(180deg, #CDDDEA 0%, #65AEFC 100%);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-
-
-    .top-logo {
-        content: url("/pictures/logo/long\ color\ logo\ -\ no\ background.png")
-    }
-
-    .welcome img {
-        display: none;
-
-    }
-
-
-    nav {
-        display: block;
-        position: static;
-        top: 0px;
-    }
-
-    nav li {
-        display: inline-block;
-        padding: 0px;
-
-    }
-
-    header label {
-        display: none;
-    }
-
-    #navigation .highlight-nav {
-        padding-left: 0px;
-    }
-
+    /*home page*/
     .new,
     .exhibits {
         display: grid;
-        grid-template-columns: 1fr;
         max-width: 90rem;
         margin: 50px auto;
         grid-gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+
 
     }
 
-    .new {
-        background-color: #FEFAEE;
+    .new h2 {
+        grid-column: -1/1;
     }
 
     .new-news h2,
     .new-news h4,
-    .new-news p .exhibits-details h2,
-    .exhibits-details h4,
-    .exhibits-details p,
-    {
-    grid-column: 1;
-    margin: 15px;
-    display: flex;
-    min-height: 4.5rem;
-}
+    .new-news p,
+    .exhibits-details h2,
+    .exhibits-details p {
+        grid-column: 1;
+        margin: 15px;
+        display: flex;
+        min-height: 5rem;
+    }
 
-.new h2,
-.exhibits h2 {
-    grid-column: -1/1;
-}
-
-footer img {
-    width: 200px;
-}
-
-footer {
-    max-width: 2000rem;
-}
-
-.footer-logo-slogan {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    margin: auto;
-}
+    /*get involved*/
 
 
-.footer-logo-slogan h3 {
-    font-size: 3rem;
-}
 
-.footer-logo-slogan p {
-    margin: 5px;
-    margin-left: 19rem;
-}
-}
+
+
+    @media (min-width: 900px) {
+
+        h1 {
+
+            font-size: 2.81rem;
+
+        }
+
+        h2,
+        .home h1,
+        h3 {
+
+            font-size: 1.87rem;
+
+        }
+
+        .home h1 {
+            padding: 3.5rem 5.9rem 3.5rem 9.5rem;
+        }
+
+        .home-cta {
+            position: absolute;
+            top: 34rem;
+            right: 2rem;
+        }
+
+        #navigation {
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background-color: #BAE1FF;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 0;
+            padding: 15px;
+
+        }
+
+        #navigation .highlight-nav {
+            background-color: #D92B04;
+            color: white;
+        }
+
+        .nav-bar {
+            background-color: #BAE1FF;
+        }
+
+        nav a {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            display: block;
+            margin: 0;
+        }
+
+        .home {
+            height: 14.375rem;
+            width: 59.625rem;
+            margin: auto;
+            background: linear-gradient(180deg, #CDDDEA 0%, #65AEFC 100%);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+
+        .top-logo {
+            content: url("/pictures/logo/long\ color\ logo\ -\ no\ background.png")
+        }
+
+        .welcome img {
+            display: none;
+
+        }
+
+
+        nav {
+            display: block;
+            position: static;
+            top: 0px;
+        }
+
+        nav li {
+            display: inline-block;
+            padding: 0px;
+
+        }
+
+        header label {
+            display: none;
+        }
+
+        #navigation .highlight-nav {
+            padding-left: 0px;
+        }
+
+        /*about us*/
+        .about-start {
+            padding: 4rem;
+            font-size: 2rem;
+        }
+
+        /*exhibits*/
+
+        .new,
+        .exhibits,
+        .about {
+            display: grid;
+            max-width: 90rem;
+            margin: 50px auto;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 1000px;
+
+
+        }
+
+        .exhibits-details {
+
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 150px;
+
+
+        }
+
+        .new {
+            background-color: #FEFAEE;
+        }
+
+        /*join us*/
+
+        .children,
+        .teacher,
+        .researcher {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 3rem;
+            margin: 3rem auto;
+            align-items: center;
+
+        }
+
+        .children h2,
+        .teacher h2,
+        .researcher h2 {
+            grid-column: -1/1;
+            text-align: center;
+        }
+
+
+
+
+        .children img,
+        .researcher img {
+            grid-row: 2/3;
+            grid-column: 2/2;
+        }
+
+        .teacher img {
+            grid-row: 2/3;
+            grid-column: 4/5;
+        }
+
+
+
+        .children-text,
+        .researcher-text {
+            grid-column: 3/5;
+
+        }
+
+        .teacher-text {
+            grid-column: 2/4;
+
+        }
+
+
+
+
+
+
+        /*footer*/
+        footer img {
+            width: 200px;
+        }
+
+        footer {
+            max-width: 2000rem;
+        }
+
+        .footer-logo-slogan {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            margin: auto;
+        }
+
+
+        .footer-logo-slogan h3 {
+            font-size: 3rem;
+        }
+
+        .footer-logo-slogan p {
+            margin: 5px;
+            margin-left: 19rem;
+        }
+    }
