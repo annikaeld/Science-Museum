@@ -353,7 +353,21 @@ footer img {
 
     /*get involved*/
 
+    .get-involved {
+        max-width: 90rem;
+        margin: 50px auto;
+    }
 
+    .get-involved-image-1,
+    .get-involved-image-2 {
+        float: left;
+        width: 30%;
+    }
+
+    .get-involved-text {
+        float: right;
+        width: 70%;
+    }
 
 
 
