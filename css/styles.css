@@ -285,8 +285,10 @@ img {
     background-color: #BAE1FF;
 }
 
+/*shadow color from w3schools.com*/
 .join-us img {
     border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /*donate*/
@@ -465,15 +467,15 @@ footer img {
         align-items: center;
         justify-content: space-around;
         margin: 0;
-        padding: 0px 15px;
+    }
 
+    #navigation a {
+        padding: 15px 15px;
     }
 
     #navigation .highlight-nav {
         box-shadow: inset #65AEFC 0px 0px 60px -12px;
         color: black;
-        padding: 15px 10px;
-
     }
 
     .nav-bar {
