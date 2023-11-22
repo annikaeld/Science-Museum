@@ -12,6 +12,7 @@ main {
 
 footer {
     margin-top: auto;
+    background-color: #BAE1FF;
 }
 
 .orange {
@@ -53,10 +54,6 @@ nav a {
 h3 {
     color: #496880;
     margin: 1rem;
-}
-
-footer {
-    background-color: #BAE1FF;
 }
 
 .new {
@@ -128,11 +125,18 @@ h3 {
     display: none;
 }
 
-.exhibits-links a,
 .exhibits a {
     text-decoration: underline;
     text-decoration-color: #D92B04;
     -webkit-text-decoration-color: #D92B04;
+}
+
+.exhibits a:hover,
+.exhibits p:hover {
+    text-decoration: underline;
+    text-decoration-color: #800000;
+    -webkit-text-decoration-color: #800000;
+    color: #800000;
 }
 
 
@@ -149,6 +153,7 @@ nav a,
     max-width: 24rem;
     margin: 1rem;
     text-align: center;
+    border: 1px solid transparent;
 }
 
 /*box-shadow colour copied from w3schools.com*/
@@ -167,7 +172,7 @@ nav a,
 }
 
 .cta:hover {
-    border: 1px solid black;
+    text-decoration: underline;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -266,6 +271,10 @@ img {
     flex-direction: column;
 }
 
+.location-content a:hover {
+    color: #800000;
+}
+
 .material-symbols-outlined,
 .material-icons {
     font-size: 2rem;
@@ -347,15 +356,8 @@ input[type=number] {
 
 /*footer*/
 
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 footer img {
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
     width: auto;
 
@@ -371,6 +373,15 @@ footer img {
     margin-top: 20px;
     margin-bottom: 20px;
 
+}
+
+@media (min-width: 400px) {
+
+    footer img {
+        max-width: 10rem;
+        height: auto;
+        width: auto;
+    }
 }
 
 @media (min-width: 600px) {
@@ -431,6 +442,25 @@ footer img {
     }
 
 
+    /*footer*/
+
+    .footer-logo-slogan {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .footer-logo-slogan h3 {
+        font-size: 2rem;
+    }
+
+    .footer-logo-slogan p {
+        margin: 5px;
+
+    }
 }
 
 
@@ -482,6 +512,12 @@ footer img {
         box-shadow: inset #65AEFC 0px 0px 60px -12px;
         color: black;
     }
+
+    #navigation li:hover {
+        text-decoration: underline;
+    }
+
+
 
     .nav-bar {
         background-color: #BAE1FF;
@@ -626,38 +662,12 @@ footer img {
         display: grid;
     }
 
-
-
-
-
-
     /*footer*/
-    footer img {
-        width: 200px;
-    }
 
-    footer {
-        max-width: 2000rem;
-    }
-
-    .footer-logo-slogan {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-
-        margin: auto;
-    }
-
-
-    .footer-logo-slogan h3 {
+    .slogan h3 {
         font-size: 3rem;
     }
 
-    .footer-logo-slogan p {
-        margin: 5px;
-        margin-left: 19rem;
-    }
 }
 
 @media (min-width: 1800px) {
