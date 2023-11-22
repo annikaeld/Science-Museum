@@ -435,6 +435,7 @@ footer img {
     .donation {
         max-width: 50rem;
         margin: auto;
+        padding-top: 4rem;
     }
 
     .exhibits-links {
