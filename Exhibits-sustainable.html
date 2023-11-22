@@ -17,70 +17,86 @@
 
 <body>
     <header>
-        <a href="/index.html"><img src="/pictures/logo/Color logo - no background.png"
-                alt="the logo of the science museum"></a>
-        <label for="hamburger-menu"><span class="material-icons">menu</span></label>
-        <input type="checkbox" id="hamburger-menu" />
-        <nav>
-            <ul id="navigation">
-                <li><a href="/find-us.html">Find us</a></li>
-                <li><a href="/exhibits.html">Exhibits</a></li>
-                <li><a href="/about-us.html">About us</a></li>
-                <li><a href="/join-us.html">Join us</a></li>
-                <li><a href="/donate.html">Donate</a></li>
-                <li><a href="/get-involved.html">Get involved</a></li>
+        <div>
+            <a href="/index.html"><img class="top-logo" alt="logo for the science museum"></a>
+        </div>
+        <div>
+            <label for="hamburger-menu"><span class="material-icons red">menu</span></label>
+            <input type="checkbox" id="hamburger-menu" />
+            <nav>
+                <ul id="navigation">
+                    <li><a href="/find-us.html" class="orange nav-bar">Find us</a></li>
+                    <li><a href="/exhibits.html" class="yellow nav-bar highlight-nav">Exhibits</a></li>
+                    <li><a href="/about-us.html" class="blue nav-bar">About us</a></li>
+                    <li><a href="/join-us.html" class="blue-gray nav-bar">Join us</a></li>
+                    <li><a href="/donate.html" class="blush nav-bar">Donate</a></li>
+                    <li><a href="/get-involved.html" class="green nav-bar">Get involved</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="yellow">
             <h1>Exhibits</h1>
         </section>
-        <section>
-            <h2>Journey to the Stars: Unveiling the Secrets of the Universe!</h2>
-            <img src="/pictures/exibits/benjaminrobyn-jespersen-syhd5N6nceM-unsplash.jpg"
-                alt="picture of the universe" />
-            <p>Step into our awesome exhibit, 'The Sky Above Us,' and get ready to discover the secrets of the universe.
+        <section class="exhibits-links">
+            <div class="exhibits-details">
+                <h2>Cosmology</h2>
+                <a href="/Exhibits-stars.html">
+                    <p class="red">Journey to the Stars: Unveiling the Secrets of the Universe!</p>
+                </a>
+            </div>
+            <div class="exhibits-details">
+                <h2>Evolution</h2>
+                <a href="/Exhibits-evolution.html">
+                    <p class="red">Time Travelers: Unraveling the Epic Story of Life on Earth!</p>
+                </a>
+            </div>
+            <div class="exhibits-details">
+                <h2>Biology and medicine</h2>
+                <a href="/Exhibits-medicine.html">
+                    <p class="red">Bio-Wonders:
+                        Discovering the Secrets of Life and Medicine!</p>
+                </a>
+            </div>
+            <div class="exhibits-details">
+                <h2>Robotics and AI</h2>
+                <a href="/Exhibits-robots.html">
+                    <p class="red">Tech Wonders:
+                        Exploring Robots and Artificial Intelligence!</p>
+                </a>
+            </div>
+        </section>
+        <section class="exhibits-main">
+            <h2>Earth Heroes Unite: Exploring a Sustainable Future for All!</h2>
+            <img src="/pictures/exibits/richmond-fajardo-_28phbj4d64-unsplash.jpg"
+                alt="a girl sitting among lots of green plants" />
+            <p>Hey there, Earth Heroes! Get ready to embark on a mission to save our incredible planet!</p>
 
-                We're going to unveil the dazzling constellations and galaxies that light up our night sky, and you'll
-                even learn about the clever ancient navigators who used them for their epic journeys.
+            <p>Scientists are working super hard to figure out how we can keep Earth awesome for EVERYONE.</p>
 
-                Travel through time with us on our solar system quest! Join the fearless Arab traders, peek through
-                Galileo's magical telescope, and zoom to the present day as we uncover the mysteries of the planets in
-                our cosmic neighborhood. Get ready to blast off into an interstellar adventure like never before!
+            <p>At our Ecology HQ, we're going to dig into some big stuff like global warming, endangered animals, and
+                yucky pollution.
+                But don't worry, it's not all gloom and doom! We're also going to show you how YOU can be part of the
+                super squad that makes our future even brighter!</p>
+
+            <p>Let's team up for a green and glorious tomorrow!
             </p>
-
-            <h2>Biology and medicine</h2>
-            <a href="/Exhibits-medicine.html">
-                <img src="/pictures/exibits/people-219985_1280.jpg" alt="a young man looking through a microscope" />
-                <p>Bio-Wonders:
-                    Discovering the Secrets of Life and Medicine!</p>
-            </a>
-            <h2>Robotics and AI</h2>
-            <a href="/Exhibits-robots.html">
-                <img src="/pictures/exibits/andy-kelly-0E_vhMVqL9g-unsplash.jpg"
-                    alt="a little girl shaking the hand of a friendly robot" />
-                <p>Tech Wonders:
-                    Exploring Robots and Artificial Intelligence!</p>
-            </a>
-            <h2>Ecology</h2>
-            <a href="/Exhibits-sustainable.html">
-                <img src="/pictures/exibits/richmond-fajardo-_28phbj4d64-unsplash.jpg"
-                    alt="a girl sitting among lots of green plants" />
-                <p>Earth Heroes Unite: Exploring a Sustainable Future for All!</p>
-            </a>
+            </div>
         </section>
 
     </main>
     <footer>
-<section class="footer-logo-slogan">
-      <div class="black-logo">
-        <a href="/index.html">
-            <img src="/pictures/logo/Black logo - no background.png" alt="Black logo - no background" /></a>
-</div>
-      <div class="slogan">
-        <h3>Explore together</h3>
+        <section class="footer-logo-slogan">
+            <div class="black-logo">
+                <a href="/index.html">
+                    <img src="/pictures/logo/Black logo - no background.png" alt="Black logo - no background" /></a>
+            </div>
+            <div class="slogan">
+                <h3>Explore together</h3>
                 <p>post@sciencemuseum.com</p>
-</div>
-    </section>
+            </div>
+        </section>
     </footer>
 </body>
 

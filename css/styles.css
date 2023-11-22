@@ -606,6 +606,20 @@ footer img {
 
     }
 
+    .exhibits-links {
+        float: left;
+        max-width: 25%;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .exhibits-main {
+        float: right;
+        max-width: 60%;
+        margin-right: 4%;
+        margin-top: 4%;
+    }
+
     .new {
         background-color: #FEFAEE;
     }
