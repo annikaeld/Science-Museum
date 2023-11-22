@@ -451,7 +451,7 @@ footer img {
         justify-content: space-between;
         align-items: center;
         margin: auto;
-        max-width: 90%;
+        max-width: 80%;
     }
 
     .footer-logo-slogan h3 {
@@ -577,6 +577,10 @@ footer img {
     }
 
     /*exhibits*/
+
+    #about-grid {
+        grid-gap: 69px;
+    }
 
     .new,
     .exhibits,
