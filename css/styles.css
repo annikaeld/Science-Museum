@@ -119,25 +119,27 @@ h3 {
 .material-symbols-outlined.red,
 .red {
     color: #D92B04;
+    text-decoration: none;
 }
 
 .exhibits-links {
     display: none;
 }
 
-.exhibits a {
+.exhibits-details a {
     text-decoration: underline;
     text-decoration-color: #D92B04;
     -webkit-text-decoration-color: #D92B04;
 }
 
-.exhibits a:hover,
-.exhibits p:hover {
+.exhibits-details a:hover,
+.exhibits-details p:hover {
     text-decoration: underline;
     text-decoration-color: #800000;
     -webkit-text-decoration-color: #800000;
     color: #800000;
 }
+
 
 
 .top-logo {
@@ -176,10 +178,7 @@ nav a,
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* visited link */
-a:visited {
-    color: black;
-}
+
 
 
 
@@ -249,6 +248,23 @@ img {
     height: auto;
 }
 
+/*exhibits*/
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.arrow-left,
+.arrow-right {
+    display: inline-block;
+}
+
+.arrow-left a,
+.arrow-right a {
+    color: #D92B04;
+}
+
 /*find us*/
 
 .find-us,
@@ -286,6 +302,8 @@ img {
 .location-content p {
     margin: 0;
 }
+
+
 
 /*join us*/
 
@@ -436,10 +454,6 @@ footer img {
         max-width: 50rem;
         margin: auto;
         padding-top: 4rem;
-    }
-
-    .exhibits-links {
-        display: block;
     }
 
 
@@ -611,6 +625,7 @@ footer img {
         max-width: 25%;
         margin-left: 2%;
         margin-top: 2%;
+        display: block;
     }
 
     .exhibits-main {
@@ -622,6 +637,10 @@ footer img {
 
     .new {
         background-color: #FEFAEE;
+    }
+
+    .arrows {
+        display: none;
     }
 
     /*join us*/
