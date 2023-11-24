@@ -62,14 +62,16 @@ h3 {
 }
 
 .location-content a,
-.form__input, .form__label,
+.form__input,
+.form__label,
 textarea,
 p {
     font-family: 'Mulish', sans-serif;
 }
 
 .location-content a,
-.form__input, .form__label,
+.form__input,
+.form__label,
 textarea,
 p,
 h4 {
@@ -362,7 +364,8 @@ input[type=number]:focus {
     outline: none
 }
 
-.donation a, .contact a {
+.donation a,
+.contact a {
     float: right;
 }
 
@@ -380,7 +383,8 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.donation span .contact span {
+.donation span,
+.contact span {
     font-size: 6rem;
     display: flex;
     justify-content: center;
@@ -443,7 +447,8 @@ footer img {
 .slogan p {
     font-size: 1.1rem;
 }
-.slogan a  {
+
+.slogan a {
     color: #000;
     text-decoration: none;
     margin: 2rem;
@@ -664,7 +669,7 @@ footer img {
 
     .new,
     .exhibits,
-    .contact
+
     .about {
         display: grid;
         max-width: 90rem;
@@ -673,10 +678,8 @@ footer img {
         grid-template-columns: repeat(3, 1fr)
     }
 
-    .about img {
-        display: block;
-        margin: 0 auto;
-    }
+
+
 
     .exhibits-details {
 
