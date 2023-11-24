@@ -62,14 +62,14 @@ h3 {
 }
 
 .location-content a,
-.form__input,
+.form__input, .form__label,
 textarea,
 p {
     font-family: 'Mulish', sans-serif;
 }
 
 .location-content a,
-.form__input,
+.form__input, .form__label,
 textarea,
 p,
 h4 {
@@ -346,7 +346,6 @@ input[type=number] {
     border: 1px solid #eee;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: large;
     transition: .3s border-color;
     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
@@ -363,7 +362,9 @@ input[type=number]:focus {
     outline: none
 }
 
-
+.donation a, .contact a {
+    float: right;
+}
 
 /*copied from w3schools.com how to hide arrows from number field*/
 
@@ -402,8 +403,15 @@ input[type=number] {
 .form__input {
     display: block;
     box-sizing: border-box;
-    margin: 0px 10px 16px 0px;
-    width: 60%;
+    margin: 0px 10px 16px -16px;
+    width: 100%;
+}
+
+.form__label {
+    display: block;
+    box-sizing: border-box;
+    margin: 30px 1px 6px -16px;
+    width: 100%;
 }
 
 textarea {
@@ -500,6 +508,12 @@ footer img {
         padding-top: 3rem;
     }
 
+    /*contact*/
+    .contact {
+        max-width: 30rem;
+        margin: auto;
+        padding-top: 3rem;
+    }
 
     /*footer*/
 
@@ -525,10 +539,6 @@ footer img {
         font-size: 1.5rem;
     }
 
-    .contact {
-        max-width: 40%;
-        margin: 50px auto;
-    }
 }
 
 
@@ -649,6 +659,7 @@ footer img {
 
     .new,
     .exhibits,
+    .contact
     .about {
         display: grid;
         max-width: 90rem;
