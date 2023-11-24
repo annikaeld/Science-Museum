@@ -443,6 +443,11 @@ footer img {
 .slogan p {
     font-size: 1.1rem;
 }
+.slogan a  {
+    color: #000;
+    text-decoration: none;
+    margin: 2rem;
+}
 
 @media (min-width: 400px) {
 
