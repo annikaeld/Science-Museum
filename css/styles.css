@@ -348,6 +348,7 @@ input[type=number] {
     border: 1px solid #eee;
     border-radius: 5px;
     box-sizing: border-box;
+    font-size: large;
     transition: .3s border-color;
     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
