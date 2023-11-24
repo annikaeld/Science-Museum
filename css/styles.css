@@ -386,6 +386,9 @@ input[type=number] {
 
 /*contact*/
 
+.contact {
+    margin-top: 2rem;
+}
 
 .form__input {
     display: block;
