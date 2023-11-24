@@ -386,10 +386,6 @@ input[type=number] {
 
 /*contact*/
 
-.contact {
-    max-width: 40%;
-    margin: 50px auto;
-}
 
 .form__input {
     display: block;
@@ -515,6 +511,11 @@ footer img {
 
     .slogan p {
         font-size: 1.5rem;
+    }
+
+    .contact {
+        max-width: 40%;
+        margin: 50px auto;
     }
 }
 
