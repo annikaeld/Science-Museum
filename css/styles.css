@@ -61,12 +61,14 @@ h3 {
     padding: 5px;
 }
 
+.location-content a,
 .form__input,
 textarea,
 p {
     font-family: 'Mulish', sans-serif;
 }
 
+.location-content a,
 .form__input,
 textarea,
 p,
@@ -175,6 +177,7 @@ nav a,
     margin: 1rem;
     text-align: center;
     text-transform: none;
+    float: right;
 }
 
 .cta:hover {
@@ -360,9 +363,7 @@ input[type=number]:focus {
     outline: none
 }
 
-.donation a {
-    float: right;
-}
+
 
 /*copied from w3schools.com how to hide arrows from number field*/
 
@@ -648,10 +649,12 @@ footer img {
         max-width: 90rem;
         margin: 50px auto;
         grid-gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 1000px;
+        grid-template-columns: repeat(3, 1fr)
+    }
 
-
+    .about img {
+        display: block;
+        margin: 0 auto;
     }
 
     .exhibits-details {
