@@ -599,7 +599,7 @@ footer img {
         color: black;
     }
 
-    .slogan a,
+    .slogan a:hover,
     #navigation li:hover {
         text-decoration: underline;
     }
