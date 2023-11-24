@@ -61,10 +61,14 @@ h3 {
     padding: 5px;
 }
 
+.form__input,
+textarea,
 p {
     font-family: 'Mulish', sans-serif;
 }
 
+.form__input,
+textarea,
 p,
 h4 {
     font-size: 1.5rem;
@@ -332,7 +336,7 @@ img {
 
 /*donate*/
 
-
+.form__input,
 input[type=number] {
     background-color: white;
     color: black;
@@ -344,10 +348,12 @@ input[type=number] {
     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
+.form__input:hover,
 input[type=number]:hover {
     border: 1px solid #aaa
 }
 
+.form__input:focus,
 input[type=number]:focus {
     border: 1px solid black;
     box-shadow: #aaa;
@@ -376,6 +382,25 @@ input[type=number] {
     font-size: 6rem;
     display: flex;
     justify-content: center;
+}
+
+/*contact*/
+
+.contact {
+    max-width: 40%;
+    margin: 50px auto;
+}
+
+.form__input {
+    display: block;
+    box-sizing: border-box;
+    margin: 0px 10px 16px 0px;
+    width: 60%;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
 }
 
 /*footer*/
@@ -458,6 +483,7 @@ footer img {
         float: right;
         width: 70%;
     }
+
 
     /*donation*/
     .donation {

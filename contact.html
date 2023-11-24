@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>The Community Science Museum | Donate</title>
+    <title>The Community Science Museum | Exhibits</title>
     <meta name="description" content="Explore the Community Science Museum togheter" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -26,30 +26,30 @@
             <nav>
                 <ul id="navigation">
                     <li><a href="/find-us.html" class="orange nav-bar">Find us</a></li>
-                    <li><a href="/exhibits.html" class="yellow nav-bar">Exhibits</a></li>
+                    <li><a href="/exhibits.html" class="yellow nav-bar highlight-nav">Exhibits</a></li>
                     <li><a href="/about-us.html" class="blue nav-bar">About us</a></li>
                     <li><a href="/join-us.html" class="blue-gray nav-bar">Join us</a></li>
-                    <li><a href="/donate.html" class="blush nav-bar highlight-nav">Donate</a></li>
+                    <li><a href="/donate.html" class="blush nav-bar">Donate</a></li>
                     <li><a href="/get-involved.html" class="green nav-bar">Get involved</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="blush">
-            <h1>Donate</h1>
+        <section class="green">
+            <h1>Contact us</h1>
         </section>
-        <section class="donation">
-            <h2>Your Support Keeps Us Thriving!</h2>
-            <p>While admission is free, donations help us bring you even more exciting exhibits and experiences. Every
-                contribution, big or small, makes a difference.</p>
-
-            <p>Join us in shaping a brighter future for our museum!</p>
-            <p><label for="donation">I would like to donate:</label>
-                <input type="number" name="donation" id="donation" /> kr
-            </p>
-            <a href="/donate-sucess.html" class="cta cta-small blush">Donate now!</a>
+        <section class="contact">
+            <form action="message-sent.php" method="POST">
+                <label for="email"></label>
+                <input id="email" type="email" placeholder="Your email address" name="email" class="form__input"
+                    required>
+                <label for="message"></label>
+                <textarea id="message" placeholder="Your message" name="message" class="form__input"></textarea>
+                <a href="/contact-sucess.html" class="cta cta-small green">Send!</a>
+            </form>
         </section>
+        </div>
 
     </main>
     <footer>
