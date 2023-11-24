@@ -385,6 +385,13 @@ input[type=number] {
     justify-content: center;
 }
 
+.top-icon {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
 /*contact*/
 
 .contact {
@@ -548,9 +555,7 @@ footer img {
     }
 
     .home-cta {
-        position: absolute;
-        top: 34rem;
-        right: 2rem;
+        display: none;
     }
 
     #navigation {
