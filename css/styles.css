@@ -378,7 +378,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.donation span {
+.donation span .contact span {
     font-size: 6rem;
     display: flex;
     justify-content: center;
@@ -388,6 +388,7 @@ input[type=number] {
 
 .contact {
     margin-top: 2rem;
+
 }
 
 .form__input {
