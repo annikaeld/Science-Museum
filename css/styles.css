@@ -134,14 +134,17 @@ h3 {
     display: none;
 }
 
-.exhibits-details a {
+.exhibits-details a,
+.exhibits-details-2 a {
     text-decoration: underline;
     text-decoration-color: #D92B04;
     -webkit-text-decoration-color: #D92B04;
 }
 
 .exhibits-details a:hover,
-.exhibits-details p:hover {
+.exhibits-details p:hover,
+.exhibits-details-2 a:hover,
+.exhibits-details-2 p:hover {
     text-decoration: underline;
     text-decoration-color: #800000;
     -webkit-text-decoration-color: #800000;
@@ -348,7 +351,7 @@ input[type=number] {
     border: 1px solid #eee;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: large;
+    font-size: x-large;
     transition: .3s border-color;
     box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
@@ -405,17 +408,8 @@ input[type=number] {
 
 }
 
-.form__input {
-    display: block;
-    box-sizing: border-box;
-    margin: 0px 10px 16px -16px;
-    width: 100%;
-}
-
+.form__input,
 .form__label {
-    display: block;
-    box-sizing: border-box;
-    margin: 30px 1px 6px -16px;
     width: 100%;
 }
 
