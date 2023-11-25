@@ -570,7 +570,10 @@ footer img {
     }
 
     .home-cta {
-        display: none;
+        position: absolute;
+        top: 31rem;
+        right: 2rem;
+        width: 22rem;
     }
 
     #navigation {
