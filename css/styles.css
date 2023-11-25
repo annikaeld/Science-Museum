@@ -696,16 +696,16 @@ footer img {
 
     .exhibits-links {
         float: left;
-        max-width: 25%;
+        max-width: 15%;
         margin-left: 2%;
-        margin-top: 2%;
+        margin-top: 10%;
         display: block;
     }
 
     .exhibits-main {
         float: right;
-        max-width: 60%;
-        margin-right: 4%;
+        max-width: 50%;
+        margin-right: 24%;
         margin-top: 4%;
     }
 
